@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="chat.component.css">
+<header>
+    <h1>My chat</h1>
+</header>
+<div class="container">
+    <label>Hola <strong>{{userChat.user}}</strong></label>
+    <div *ngFor="let a of newMessages">
+        <label><strong>{{a.user}}</strong></label>
+        <span>{{a.text}}</span>
+    </div>
+    <div>
+        <input type="text" placeholder="Escribe algo" class="form-control" (change)="newMessages" [(ngModel)]="userChat.text">
+    </div>
+</div>
+
+
+
+

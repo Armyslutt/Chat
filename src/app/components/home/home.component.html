@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="home.component.css">
+<header>
+    <h1>My chat</h1>
+</header>
+<div class="container">
+    <div>
+        <h2>
+            Escribe tu nombre para unirte al chat
+        </h2>
+
+        <input type="text" class="form-control" area-required [(ngModel)]="user.name">
+        <button class="btn w-100" [routerLink] = "['/chat', user.name]">Join chat</button>
+    </div>
+</div>
+

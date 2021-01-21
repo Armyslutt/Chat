@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "chat"
+  "defaultProject": "chat",
+  "cli": {
+    "analytics": false
+  }
 }
